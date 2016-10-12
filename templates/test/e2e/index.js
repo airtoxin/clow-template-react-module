@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import nightmare from 'nightmare';
 import assert from 'assert';
 

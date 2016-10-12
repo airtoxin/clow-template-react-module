@@ -3,7 +3,7 @@ import webpack from 'webpack';
 import Mocha from 'mocha';
 import path from 'path';
 import readdir from 'recursive-readdir';
-import config from '../webpack.test-config.babel.js';
+import config from '../webpack.test-config.babel';
 
 const compilers = webpack(config);
 

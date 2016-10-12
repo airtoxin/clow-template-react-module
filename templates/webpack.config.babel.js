@@ -5,17 +5,17 @@ import Copy from 'copy-webpack-plugin';
 export default {
   entry: {
     index: ['./src/index.jsx'],
-    entry: './dev/entry.jsx'
+    entry: './dev/entry.jsx',
   },
   output: {
     publicPath: '/',
     sourcePath: ' ',
     path: path.resolve(__dirname, 'lib'),
-    filename: '[name].js'
+    filename: '[name].js',
   },
   target: 'web',
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx'],
   },
   module: {
     loaders: [
@@ -33,6 +33,6 @@ export default {
     port: 9000,
     inline: true,
     hot: true,
-    colors: true
-  }
+    colors: true,
+  },
 };
