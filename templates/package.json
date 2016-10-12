@@ -1,0 +1,27 @@
+{
+  "name": "{{name}}",
+  "version": "0.0.1",
+  "description": "{{description}}",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server",
+    "test": "echo none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/airtoxin/{{name}}"
+  },
+  "keywords": [],
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "airtoxin <airtoxin@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/airtoxin/{{name}}/issues"
+  },
+  "homepage": "https://github.com/airtoxin/{{name}}#readme"
+}
