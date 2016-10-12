@@ -3,14 +3,14 @@ module.exports = [
     type: "template",
     src: {
       cwd: "templates",
-      pattern: "**/*"
+      pattern: "**/*",
     },
     dest: ".",
     args: {
       name: null,
       description: null,
-      year: (new Date()).getFullYear()
-    }
+      year: (new Date()).getFullYear(),
+    },
   },
   {
     type: "npm-install",
@@ -50,12 +50,20 @@ module.exports = [
       "copy-webpack-plugin",
       "babel-loader",
       "style-loader",
-    ]
+    ],
   },
   {
     type: "shell",
     commands: [
-      "npm info eslint-config-airbnb peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --DE eslint-config-airbnb"
-    ]
+      "npm info eslint-config-airbnb peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --DE eslint-config-airbnb",
+    ],
+  },
+  {
+    type: "shell",
+    commands: [
+      "git init",
+      "git add .",
+      "git commit -m 'Initialized by clow-template-react-module'",
+    ],
   },
 ];
