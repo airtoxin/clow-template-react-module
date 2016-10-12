@@ -7,7 +7,8 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "dev": "webpack-dev-server",
-    "test": "echo none"
+    "test": "echo none",
+    "test:e2e": "babel-node test/boot-e2e"
   },
   "repository": {
     "type": "git",
