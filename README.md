@@ -1,6 +1,6 @@
 # clow-template-react-module
 
-This is React.js module template project of [clow](https://github.com/airtoxin/clow).
+This is a [clow](https://github.com/airtoxin/clow) template project of React.js module.
 
 ```shell
 $ npm i -g clow
