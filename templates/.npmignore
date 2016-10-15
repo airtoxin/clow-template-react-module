@@ -1,0 +1,6 @@
+src
+test
+dev
+lib/*.html
+lib/entry.js
+webpack
