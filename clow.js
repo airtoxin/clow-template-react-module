@@ -40,6 +40,8 @@ module.exports = [
       // "eslint-plugin-import",
       // "eslint-plugin-jsx-a11y",
       // "eslint-plugin-react",
+      "jsdom",
+      "jsdom-global",
       "mocha",
       "npm-run-all",
       "react",

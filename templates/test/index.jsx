@@ -4,8 +4,10 @@ import { mount } from 'enzyme';
 
 describe('{{name}}', () => {
   it('calls componentDidMount', () => {
-    const C = () => (<div />);
+    let clicked = false;
+    const C = () => (<div onClick={() => clicked = true}/>);
     const wrapper = mount(<C />);
-    expect(C.prototype.componentDidMount.calledOnce).to.equal(true);
+    wrapper.find('div').simulate('click');
+    assert.strictEqual(clicked, true);
   });
 });
