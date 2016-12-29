@@ -1,6 +1,5 @@
 src
 test
-dev
-lib/*.html
-lib/entry.js
-webpack
+images
+.storybook
+stories
